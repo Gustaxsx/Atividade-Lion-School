@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #3347B0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-sair {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-principal {
+    flex: 1; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.texto-e-dispositivos h1 {
+    font-size: 2.5rem;
+    color: #333;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.destaque {
+    color: #3347B0;
+}
+
+.img-dispositivos {
+    width: 300px;
+}
+
+.botoes-cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-curso {
+    background-color: #3347B0;
+    color: white;
+    width: 250px;
+    height: 120px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    box-shadow: 8px 8px 0px #A2B0E1; 
+    transition: 0.2s;
+}
+
+.card-curso:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0px #A2B0E1;
+}
+
+.footer {
+    background-color: #3347B0;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ima{
+    width: 50%;
+    height: 13px;
+}
