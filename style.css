@@ -118,3 +118,71 @@ body {
     width: 50%;
     height: 13px;
 }
+
+.container-listagem {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nome-curso-titulo {
+    color: #3347B0;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header-listagem { width: 100%; }
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.legenda { display: flex; align-items: center; gap: 10px; font-size: 12px; color: #777; }
+.box-azul { width: 20px; height: 20px; background: #3347B0; border-radius: 4px; }
+.box-amarela { width: 20px; height: 20px; background: #E1B141; border-radius: 4px; }
+
+.grid-alunos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card-aluno {
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-aluno img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.card-aluno p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bg-cursando { background-color: #3347B0; }
+.bg-finalizado { background-color: #E1B141; }

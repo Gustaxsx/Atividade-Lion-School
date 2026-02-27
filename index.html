@@ -2,23 +2,22 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/script.js">
     <title>Lion School</title>
 </head>
 <body>
 
     <header class="navbar">
         <div class="logo">
-            <img src="/images/logo.png" alt="">
-            
+            <img src="/images/logo.png" alt="Logo">
         </div>
-        <button class="btn-sair">
-            <img src="/images/sair.png" alt="">
+        <button class="btn-sair" id="btn-voltar-home">
+            <img src="/images/sair.png" alt="Voltar"> Voltar
         </button>
     </header>
 
-    <main class="container-principal">
+    <main class="container-principal" id="container-home">
         <section class="texto-e-dispositivos">
             <h1>Escolha um <span class="destaque">curso</span> para gerenciar</h1>
             <img src="/images/devices (1).png" class="img-dispositivos" alt="Dispositivos">
@@ -29,37 +28,55 @@
         </section>
 
         <section class="botoes-cursos">
-            <button class="card-curso">
+            <button class="card-curso" data-curso="DS">
                 <img src="/images/Vector.png" alt=""> DS
             </button>
-            <button class="card-curso">
+            <button class="card-curso" data-curso="REDES">
                 <img src="/images/Vector (1).png" alt=""> REDES
             </button>
         </section>
     </main>
 
+    <main class="container-listagem" id="container-alunos" style="display: none;">
+        <div class="header-listagem">
+            <h1 id="nome-curso-titulo">Desenvolvimento de sistemas</h1>
+            
+            <div class="controles">
+                <div class="filtro-status">
+                    <label>Status</label>
+                    <select id="select-status">
+                        <option value="todos">Todos</option>
+                        <option value="Finalizado">Finalizado</option>
+                        <option value="Cursando">Cursando</option>
+                    </select>
+                </div>
+                <div class="legenda">
+                    <span>LEGENDA</span>
+                    <span class="box-azul"></span> Cursando
+                    <span class="box-amarela"></span> Finalizado
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-alunos" id="grid-alunos">
+            </div>
+    </main>
+
     <footer class="footer">
         <div class="contatos">
-            <p>📞 (11) 99999-9998</p>
-            <p>✉️ school@gmail.com</p>
-            <p>📍 Rua atividade, 211, Centro, Jandira</p>
+            <p>📞 (11) 4774-4700</p>
+            <p>✉️ lionschool@gmail.com</p>
+            <p>📍 Rua tcc, 211, Centro, Jandira</p>
         </div>
         <p class="copyright">Copyright © 2026 | Gustavo Mathias</p>
         <div class="redes-sociais">
-            <div class="icon-circle">
-                <img src="/images/Vector (2).png" alt="" class="ima">
-            </div>
-            <div class="icon-circle">
-                <img src="/images/Vector (3).png" alt="" class="ima">
-            </div>
-            <div class="icon-circle">
-                <img src="/images/Vector (4).png" alt="" class="ima">
-            </div>
-            <div class="icon-circle">
-                <img src="/images/Vector (5).png" alt="" class="ima">
-            </div>
+            <div class="icon-circle"><img src="/images/Vector (2).png" alt=""></div>
+            <div class="icon-circle"><img src="/images/Vector (3).png" alt=""></div>
+            <div class="icon-circle"><img src="/images/Vector (4).png" alt=""></div>
+            <div class="icon-circle"><img src="/images/Vector (5).png" alt=""></div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
